@@ -26,22 +26,187 @@
 		</div>
 
 		<h4>Projects</h4>
-		{{#each projects}}
-			<div class="project" id="{{id}}">
+		{{#if grid}}
+			<div class="row">
+			<div class="project col-md-4" id="{{projectList.projects.0.id}}">
 				<div class="thumbnail">
-					<a href="/project/{{id}}">
-						<img src="images/{{image}}" alt="Lorem Pixel image" class="img-responsive">
-						<h4>{{title}}</h4>
+					<a href="/project/{{projectList.projects.0.id}}">
+						<img src="images/{{projectList.projects.0.image}}" alt="Lorem Pixel image">
+						<h4>{{projectList.projects.0.title}}</h4>
 					</a>
-					<div class="likeCtr"><button class="btn btn-default likeBtn">Like</button></div>
+					<div class="details"></div>
+				<button class="btn btn-default likeBtn">Like</button>						
+				</div>
+			</div>
+
+			<div class="project col-md-4" id="{{projectList.projects.1.id}}">
+				<div class="thumbnail">
+					<a href="/project/{{projectList.projects.1.id}}">
+						<img src="images/{{projectList.projects.1.image}}" alt="Lorem Pixel image" class="img-responsive">
+						<h4>{{projectList.projects.1.title}}</h4>
+					</a>
+					<button class="btn btn-default likeBtn">Like</button>						
 					<div class="details"></div>
 				</div>
 			</div>
-		{{/each}}
+
+
+			<div class="project col-md-4" id="{{projectList.projects.2.id}}">
+				<div class="thumbnail">
+					<a href="/project/{{projects.2.id}}">
+						<img src="images/{{projectList.projects.2.image}}" alt="Lorem Pixel image" class="img-responsive">
+						<h4>{{projectList.projects.2.title}}</h4>
+					</a>
+					<button class="btn btn-default likeBtn">Like</button>						
+					<div class="details"></div>
+				</div>
+			</div>
+			</div>
+
+			<div class="row">
+			<div class="project col-md-3" id="{{projectList.projects.3.id}}">
+				<div class="thumbnail">
+					<a href="/project/{{projectList.projects.3.id}}">
+						<img src="images/{{projectList.projects.3.image}}" alt="Lorem Pixel image" class="img-responsive">
+						<h4>{{projectList.projects.3.title}}</h4>
+					</a>
+					<button class="btn btn-default likeBtn">Like</button>						
+					<div class="details"></div>
+				</div>
+			</div>
+
+
+			<div class="project col-md-3" id="{{projectList.projects.4.id}}">
+				<div class="thumbnail">
+					<a href="/project/{{projectList.projects.4.id}}">
+						<img src="images/{{projectList.projects.4.image}}" alt="Lorem Pixel image" class="img-responsive">
+						<h4>{{projectList.projects.4.title}}</h4>
+					</a>
+					<button class="btn btn-default likeBtn">Like</button>						
+					<div class="details"></div>
+				</div>
+			</div>
+
+
+			<div class="project col-md-3" id="{{projectList.projects.5.id}}">
+				<div class="thumbnail">
+					<a href="/project/{{projectList.projects.5.id}}">
+						<img src="images/{{projectList.projects.5.image}}" alt="Lorem Pixel image" class="img-responsive">
+						<h4>{{projectList.projects.5.title}}</h4>
+					</a>
+					<button class="btn btn-default likeBtn">Like</button>						
+					<div class="details"></div>
+				</div>
+			</div>
+
+			<div class="project col-md-3" id="{{projectList.projects.6.id}}">
+				<div class="thumbnail">
+					<a href="/project/{{projectList.projects.6.id}}">
+						<img src="images/{{projectList.projects.6.image}}" alt="Lorem Pixel image" class="img-responsive">
+						<h4>{{projectList.projects.6.title}}</h4>
+					</a>
+					<button class="btn btn-default likeBtn">Like</button>						
+					<div class="details"></div>
+				</div>
+			</div>
+			</div>
+
+			<div class="row">
+			<div class="project col-md-2" id="{{projectList.projects.7.id}}">
+				<div class="thumbnail">
+					<a href="/project/{{projectList.projects.7.id}}">
+						<img src="images/{{projectList.projects.7.image}}" alt="Lorem Pixel image" class="img-responsive">
+						<h4>{{projectList.projects.7.title}}</h4>
+					</a>
+					<button class="btn btn-default likeBtn">Like</button>						
+					<div class="details"></div>
+				</div>
+			</div>
+
+			<div class="project col-md-2" id="{{projectList.projects.8.id}}">
+				<div class="thumbnail">
+					<a href="/project/{{projectList.projects.8.id}}">
+						<img src="images/{{projectList.projects.8.image}}" alt="Lorem Pixel image" class="img-responsive">
+						<h4>{{projectList.projects.8.title}}</h4>
+					</a>
+					<button class="btn btn-default likeBtn">Like</button>						
+					<div class="details"></div>
+				</div>
+			</div>
+
+			<div class="project col-md-2" id="{{projectList.projects.9.id}}">
+				<div class="thumbnail">
+					<a href="/project/{{projectList.projects.9.id}}">
+						<img src="images/{{projectList.projects.9.image}}" alt="Lorem Pixel image" class="img-responsive">
+						<h4>{{projectList.projects.9.title}}</h4>
+					</a>
+					<button class="btn btn-default likeBtn">Like</button>						
+					<div class="details"></div>
+				</div>
+			</div>
+
+			<div class="project col-md-2" id="{{projectList.projects.10.id}}">
+				<div class="thumbnail">
+					<a href="/project/{{projectList.projects.10.id}}">
+						<img src="images/{{projectList.projects.10.image}}" alt="Lorem Pixel image" class="img-responsive">
+						<h4>{{projectList.projects.10.title}}</h4>
+					</a>
+					<button class="btn btn-default likeBtn">Like</button>						
+					<div class="details"></div>
+				</div>
+			</div>
+
+			<div class="project col-md-2" id="{{projectList.projects.11.id}}">
+				<div class="thumbnail">
+					<a href="/project/{{projectList.projects.11.id}}">
+						<img src="images/{{projectList.projects.11.image}}" alt="Lorem Pixel image" class="img-responsive">
+						<h4>{{projectList.projects.11.title}}</h4>
+					</a>
+					<button class="btn btn-default likeBtn">Like</button>						
+					<div class="details"></div>
+				</div>
+			</div>
+
+			<div class="project col-md-2" id="{{projectList.projects.12.id}}">
+				<div class="thumbnail">
+					<a href="/project/{{projectList.projects.12.id}}">
+						<img src="images/{{projectList.projects.12.image}}" alt="Lorem Pixel image" class="img-responsive">
+						<h4>{{projectList.projects.12.title}}</h4>
+					</a>
+					<button class="btn btn-default likeBtn">Like</button>						
+					<div class="details"></div>
+				</div>
+			</div>
+			</div>
+		{{else}}
+			{{#each projectList.projects}}
+				<div class="project" id="{{id}}">
+					<div class="thumbnail">
+						<a href="/project/{{id}}">
+							<img src="images/{{image}}" alt="Lorem Pixel image" class="img-responsive">
+							<h4>{{title}}</h4>
+						</a>
+						<div class="likeCtr"><button class="btn btn-default likeBtn">Like</button></div>
+						<div class="details"></div>
+					</div>
+				</div>
+			{{/each}}
+		{{/if}}
+
 
 
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
 	<script src="/js/introHCI.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-48462925-1', 'mwp-lab8.herokuapp.com');
+	  ga('send', 'pageview');
+
+	</script>
 </body>
 </html>
